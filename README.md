@@ -6,7 +6,6 @@ This is for per-cohort, per-tissue level QC of RNA-seq data. The TOPMed IRC rece
 
 This code requires the following:
 * A matrix of gene counts (read counts from RNA-SeQC). This is to be in parquet format, with rows = gene IDs and columns = TOR IDs.
-* A matrix of TPM-normalized gene expression (TPM from RNA-SeQC).  This is to be in parquet format, with rows = gene IDs and columns = TOR IDs.
 * A matrix of RNA-SeQC metrics. This is to be in TSV format, with columns = metrics and rows = TOR IDs.
 * List(s) of TOR IDs to analyze. Potentially multiple lists, in the case that multiple groups of samples should be analyzed independently (e.g., each list could correpond to a cohort/tissue combination). The file names (stripping off any .txt suffix) will be used to identify the groups, so a naming scheme such as `{cohort}_{tissue}.txt` should be used.
 
